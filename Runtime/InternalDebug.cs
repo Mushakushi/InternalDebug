@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Mushakushi.InternalDebug.Runtime
 {
 	/// <summary>
-	/// Wrapper class of <see cref="UnityEngine.Debug"/> that strips calls any-non development build. 
+	/// Wrappers for methods in the UnityEngine.Debug class that strips calls on any non-development builds.
 	/// </summary>
 	public static class InternalDebug
 	{
