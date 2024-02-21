@@ -1,13 +1,11 @@
-## Attributes 
+## [Internal Debug](InternalDebug/Runtime/InternalDebug.cs)
+ 
+This is a static `InternalDebug` wrapper class for the `UnityEngine.Debug` class.
+Any call from this class will only be present when the build is either a Development Build or build in
+Development Mode.
 
-### [ReadOnlyAttribute](Attributes/Runtime/ReadOnlyAttribute.cs)
-Creates an immutable variable in the inspector.
 ```csharp
-[ReadOnly] public int variable; 
+InternalDebug.Log("Hello World!"); // Will not run in production builds unlike Debug.Log
 ```
 
-### [RenameAttribute](Attributes/Runtime/RenameAttribute.cs)
-Renames a variable in the inspector.
-```csharp
-[Rename("More Specific Name"), SerializeField] private int variable; 
-```
+*Modified from: https://github.com/JoebRogers/UnityDebug/blob/master/src/InternalDebug_NoNamespace.cs*
