@@ -1,10 +1,10 @@
 {
-	"name": "com.mushakushi.PLACEHOLDER",
+	"name": "com.mushakushi.internaldebug",
   	"version": "1.0.0",
-  	"displayName": "PLACEHOLDER",
-  	"description": "PLACEHOLDER",
+  	"displayName": "Internal Debug",
+  	"description": "This is a static InternalDebug wrapper class for the UnityEngine.Debug class. Any call from this class will only be present when the build is either a Development Build or build in Development Mode.",
   	"unity": "2022.3",
- 	"keywords": [ "PLACEHOLDER" ],
+ 	"keywords": [ "Debug", "Utility" ],
   	"author": {
    		"name": "Mushakushi",
     		"email": "info@mushakushi.com",
